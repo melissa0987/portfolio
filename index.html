@@ -41,40 +41,42 @@
 
   <body> 
     <!-- Header -->
-    <header class="container-fluid d-flex flex-column justify-content-center">
-     <section id="home">
-      <nav class="navbar navbar-expand-lg navbar-light container d-flex justify-content-between"> 
-        <!-- Mobile toggle -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Nav Links -->
-        <div class="collapse navbar-collapse justify-content-lg-end justify-content-center" id="navbarNav">
-          <ul class="navbar-nav align-items-center text-center text-lg-start">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item">
-              <!-- Theme toggle -->
-              <button id="theme-toggle" class="btn" aria-label="Toggle theme">
-                <i id="theme-icon" class="bi bi-sun"></i>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-     </section>
+    <header class="container-fluid px-0">
+      <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid d-flex justify-content-between align-items-center px-3">
+          
+          <!-- Hamburger stays LEFT -->
+          <button
+            class="navbar-toggler order-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center text-center text-lg-start">
+               <!-- nav bar menu -->
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Work Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <!-- toogle for dar/light mode -->
+                <button id="theme-toggle" class="btn">
+                  <i id="theme-icon" class="bi bi-sun"></i>
+                </button>
+              </li>
+          </div>
+        </nav>
+      </section>
     </header>
+    
 
     <!-- Main Content -->
     <main class="container-fluid d-flex flex-column justify-content-center">

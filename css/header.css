@@ -1,5 +1,42 @@
-/* header  */
-/* nav hamburger */
+/* header  */ 
+/* hamburger */
 .navbar .navbar-toggler{ 
-  background-color: #AC79F2; 
+  background-color: var(--navbg);    
+  padding: 10px 15px;
 }
+/* nav hamburger hover */
+.navbar .navbar-toggler:hover{ 
+  background-color:var(--navbgAC);    
+  box-shadow: 0 5px 10px rgba(0,0,0,5);
+  border-radius: 35px;  
+}
+
+/* nav bar options */      
+.navbar-nav li{
+  padding: 8px 5px;   
+}
+.navbar-nav a {   
+  /* border: 2px solid black; */
+  padding: 8px  15px;      
+  color: var(--txtColor);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* dak-light mode button */
+#theme-toggle {
+  padding: 5px 15px ; 
+  color: var(--txtColor);
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+} 
+.navbar-nav a:hover, #theme-toggle:hover  { 
+  background-color: var(--nav-txt-bg-hover);    
+  color: var(--nav-txt-hover);    
+  text-decoration: underline;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+} 
+

@@ -11,21 +11,21 @@ html, body {
 }
 body{
   background-image: var(--bg-image);
-  background-color: #E0C3FC;   /*fallback color*/
-  background-size: 200% 200%;
+  background-color: var(--bg-fb);  /*fallback color*/
+  background-size: 150% 150%;
   background-attachment: fixed; 
   background-repeat: no-repeat;
 }
 .container-fluid, footer{ 
-  color: var(--txtColor);
+  /* color: var(--txtColor); */
   width: 90%; 
   /* border: 2px solid black;  */
   margin: 0px auto ;
   padding: 20px; 
 
-}
-a{
-  text-decoration: none;
+} 
+ul li{
+  list-style: none;
 }
 
 img {
