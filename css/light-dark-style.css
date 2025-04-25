@@ -1,0 +1,29 @@
+/* Light Mode */
+:root {
+  /* gen  */
+  --bg:  #8A3BD9; 
+  --txtColor:  rgb(218, 238, 239); 
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg:  #021373; 
+  --txtColor:  rgb(200, 208, 189); 
+}
+
+/* 
+for light mode:
+#8A3BD9, #AC79F2, #3A175B, #62679F, #57568C
+
+for dark mode:
+#021373, #020F59, #010B40, #010626, #8491D9 
+
+/* Resetting default body margins and padding */ 
+
+/* body {
+  font-family: 'Cinzel', serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */  
+  /* background-color:  #AC79F2;
+}  
+
+*/
