@@ -154,4 +154,15 @@ document.addEventListener("DOMContentLoaded", function () {
     event.target.alt = "portfolio-ghibli"
   });
 
+
+  // for background image scroll
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollY / docHeight;
+    
+    // Set vertical background position based on scroll
+    document.body.style.backgroundPosition = `center ${scrollPercent * 100}%`; 
+  });
+
 });

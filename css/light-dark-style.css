@@ -1,19 +1,37 @@
 /* Light Mode */
 :root {
   /* gen  */
-  --bg:  #8A3BD9; 
-  --txtColor:  rgb(218, 238, 239); 
+  --bg-image: linear-gradient(320deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
+  --txtColor:  #01010b; 
 }
 
 /* Dark Mode */
 .dark-mode {
-  --bg:  #021373; 
+  --bg-image:  #1120c3; 
   --txtColor:  rgb(200, 208, 189); 
 }
 
 /* 
 for light mode:
 #8A3BD9, #AC79F2, #3A175B, #62679F, #57568C
+
+background-color: #E0C3FC;
+background-image: linear-gradient(298deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
+
+background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 21%, #97d9e1 50%, #e3c3e3 67%, #8ec5fc 85%, #d9afd9 100%);
+
+
+#0f0c29
+→ 
+#302b63
+→ 
+#24243e
+
+
 
 for dark mode:
 #021373, #020F59, #010B40, #010626, #8491D9 
