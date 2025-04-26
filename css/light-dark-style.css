@@ -1,12 +1,13 @@
 /* Light Mode */
 :root {
   /* gen  */
-  --bg-image: linear-gradient(320deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
+  --bg-image: linear-gradient(43deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
   --bg-fb: #E0C3FC;  
   --txtColor:  #04738C; 
+  --box-shadow:  rgba(0,0,0,0.5);
 
   /* header & navbar */
-  --navbg: #c4b0dd;   
+  --navbg: #eadabc;   
   --navbgAC: #F2E7C4;   
   --nav-txt-hover: #730c02;
   --nav-txt-bg-hover: #F2E7C4;
@@ -17,6 +18,7 @@
   --bg-image: linear-gradient(43deg, #010626 0%, #131c58 18%, #3e4c91 47%, #1b3081 73%, #021373 82%, #020f59 95%);
   --bg-fb: #010626;  
   --txtColor:  rgb(200, 208, 189); 
+  --box-shadow:  rgba(149, 178, 247, 0.975);
 
    /* header & navbar */
   --navbg: #8491D9;   

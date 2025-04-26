@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // funtion for arrow to the top
   const backToTopButton = document.getElementById("arrowTop");
-
   window.onscroll = function () {
     if (
       document.body.scrollTop > 50 ||
@@ -154,15 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
     event.target.alt = "portfolio-ghibli"
   });
 
-
-  // for background image scroll
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    const docHeight = document.body.scrollHeight - window.innerHeight;
-    const scrollPercent = scrollY / docHeight;
-    
-    // Set vertical background position based on scroll
-    document.body.style.backgroundPosition = `center ${scrollPercent * 100}%`; 
-  });
+    // for background image scroll
+    // window.addEventListener("scroll", () => {
+    //   const scrollY = window.scrollY;
+    //   const docHeight = document.body.scrollHeight - window.innerHeight;
+    //   const scrollPercent = scrollY / docHeight;
+      
+    //   // Set vertical background position based on scroll
+    //   document.body.style.backgroundPosition = `center ${scrollPercent * 100}%`; 
+    // });
 
 });
