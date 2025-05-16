@@ -15,6 +15,7 @@ body{
   background-size: 150% 150%;
   background-attachment: fixed; 
   background-repeat: no-repeat;
+  font-family: 'Lora', serif;
 }
 .container-fluid, footer{ 
   /* color: var(--txtColor); */
@@ -37,3 +38,5 @@ img {
   display: block;
   margin: 0 auto;
 } 
+
+

@@ -2,7 +2,7 @@
 /* hamburger */
 header{
   width: 90%;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 .navbar .navbar-toggler{ 
   background-color: var(--navbg);    

@@ -11,20 +11,31 @@
   --navbgAC: #F2E7C4;   
   --nav-txt-hover: #730c02;
   --nav-txt-bg-hover: #F2E7C4;
+
+  /* about */
+  --photo-frame:  rgb(55, 28, 134);
+  --blockquote: #2C2C2C; 
+
+  
+
 }
 
 /* Dark Mode */
 .dark-mode {
   --bg-image: linear-gradient(43deg, #010626 0%, #131c58 18%, #3e4c91 47%, #1b3081 73%, #021373 82%, #020f59 95%);
   --bg-fb: #010626;  
-  --txtColor:  rgb(200, 208, 189); 
+  --txtColor: #FFC1CC;  
   --box-shadow:  rgba(149, 178, 247, 0.975);
 
    /* header & navbar */
-  --navbg: #8491D9;   
+  --navbg: #FFC1CC;  
   --navbgAC: #9CC7E6;   
-  --nav-txt-hover: #010626;
+  --nav-txt-hover: #151b48;
   --nav-txt-bg-hover: #8491D9;
+
+  /* about */
+  --photo-frame: #B39CD0;
+  --blockquote: #A8DADC;
 }
 
 /* 
