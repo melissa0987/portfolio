@@ -82,14 +82,11 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: var(--font-poppins);
 }
 
 #about {
   min-height: 100vh;
-}
-
-#education {
-  min-height: 85vh;
 }
 
 #projects {
@@ -126,10 +123,6 @@ h2 {
     padding: 100rem 0 0 0;
   }
 
-  #education {
-    min-height: 75vh;
-  }
-
   #projects {
     min-height: 80vh;
   }
@@ -150,9 +143,5 @@ h2 {
 
   h2 {
     font-size: 2rem;
-  }
-
-  #education {
-    min-height: 70vh;
   }
 }

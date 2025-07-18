@@ -18,7 +18,7 @@
   text-decoration: underline; 
 }
 
-.container {
+.education-section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -72,6 +72,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-family: var(--font-poppins);
+  color: var(--txtColor);
 }
 
 .location-label {
@@ -85,11 +86,13 @@
 }
 
 .program {
-  font-size: 1.1rem;
-  color: var(--blockquote);
-  line-height: 1.6;
-  font-family: var(--font-poppins);
-  margin-bottom: 1.5rem;
+ background: var(--exp-date-bg);
+  color: var(--exp-date-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .completion {
@@ -160,9 +163,9 @@
   }
   
   .location {
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row; 
     gap: 0.5rem;
+    margin: auto;
   }
   
   .completion {
@@ -193,6 +196,8 @@
   .location-label {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
+    text-align: center;
+    margin: auto;
   }
   
   .completion-label {
