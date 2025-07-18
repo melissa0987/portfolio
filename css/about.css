@@ -1,6 +1,5 @@
-
+/* About section specific styles */
 #about {
-  padding: 15vh 0;
   border-radius: 10px;
 }
 
@@ -51,7 +50,7 @@ blockquote {
 }
 
 .intro-small {
-  font-family: var(--font-sourgummy); /* Sour Gummy */
+  font-family: var(--font-sourgummy);
   font-size: 2.8rem;
   color: var(--blockquote);
   margin-bottom: 1.5rem;
@@ -70,7 +69,7 @@ blockquote p {
   margin-bottom: 0;
 }
 
-/* Tablets */
+/* About section responsive styles */
 @media (max-width: 768px) {
   .about-container {
     gap: 2rem;
@@ -102,7 +101,6 @@ blockquote p {
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .about-container {
     gap: 1.5rem;
@@ -129,11 +127,3 @@ blockquote p {
     font-size: 1.1rem;
   }
 }
-/* 
-:root {
-  --font-lora: 'Lora', serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-cinzel: 'Cinzel', serif;
-  --font-sourgummy: 'Sour Gummy', cursive;
-}
-*/

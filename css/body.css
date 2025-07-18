@@ -88,6 +88,10 @@ section {
   min-height: 100vh;
 }
 
+#education {
+  min-height: 85vh;
+}
+
 #projects {
   min-height: 90vh;
 }
@@ -122,6 +126,10 @@ h2 {
     padding: 100rem 0 0 0;
   }
 
+  #education {
+    min-height: 75vh;
+  }
+
   #projects {
     min-height: 80vh;
   }
@@ -142,5 +150,9 @@ h2 {
 
   h2 {
     font-size: 2rem;
+  }
+
+  #education {
+    min-height: 70vh;
   }
 }

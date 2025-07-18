@@ -68,21 +68,18 @@ document.addEventListener("DOMContentLoaded", function () {
             " triggers, procedures) and a Java app for" + 
             " efficient data management."
       }
-      if (pDecID == container.querySelector("#movie-desc")) {
-        pText = "Using PostgreSQL to develop a movie rental system designed" +  
-            " to manage memberships, rentals, and movie" +  
-            " inventory. The system ensures proper handling" +  
-            " of rental transactions, membership benefits," +  
-            " and overdue penalties."
+      if (pDecID == container.querySelector("#musicLibrary-desc")) {
+        pText = "This project implements a comprehensive Music Record Library" +
+                " management system using RESTful Web Services. The application" +
+                " allows users to manage clients, records, and rentals through" +
+                " REST APIs, offering full CRUD functionality, JSON responses, and HTML forms."
       }
 
-      if (pDecID == container.querySelector("#memFee-desc")) {
-        pText = "Windows Forms application in C#" +  
-              " that allows users to enter personal details," + 
-              " select membership types, choose additional options," + 
-              " calculate fees, and save membership details to a CSV " +
-              " file, with the ability to view registered memberships " +
-              " in a separate form"
+      if (pDecID == container.querySelector("#recipe-desc")) {
+        pText = "Smart Recipe Planner is a user-friendly desktop app to organize" +
+                " your recipes and plan meals—featuring a Minecraft-inspired interface" +
+                " with blocky aesthetics and earthy colors. Built with Python and PyQt6," +
+                " it offers an intuitive experience for home cooks and programming learners alike." 
       }
 
       if (pDecID == container.querySelector("#exchange-desc")) {
@@ -114,11 +111,11 @@ document.addEventListener("DOMContentLoaded", function () {
         pDecID.textContent = "";
       }
       // <!--Movie Rental Database -->
-      if (pDecID == container.querySelector("#movie-desc")) {
+      if (pDecID == container.querySelector("#musicLibrary-desc")) {
         pDecID.textContent = "";
       }
       // <!-- Projects Membership Fee Calculator -->
-      if (pDecID == container.querySelector("#memFee-desc")) {
+      if (pDecID == container.querySelector("#recipe-desc")) {
         pDecID.textContent = "";
       }
       // Exchange Rate Calculator
