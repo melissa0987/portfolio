@@ -2,41 +2,137 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; 
-  
 }
+
 html, body {
   height: 100%;  
   overflow-x: hidden; /* Prevent horizontal overflow */
   line-height: 1.6;  
 }
-body{
+
+body {
   background-image: var(--bg-image);
   background-color: var(--bg-fb);  /*fallback color*/
   background-size: 150% 150%;
   background-attachment: fixed; 
   background-repeat: no-repeat;
   font-family: 'Lora', serif;
+  color: var(--txtColor);
 }
-.container-fluid, footer{ 
-  /* color: var(--txtColor); */
-  width: 90%; 
-  /* border: 2px solid black;  */
-  margin: 0px auto ;
-  padding: 20px; 
 
+/* CONSISTENT WIDTH ALIGNMENT - All sections use same max-width */
+.container-fluid { 
+  max-width: 1200px; /* Consistent max width */
+  width: 90%; 
+  margin: 0px auto;
+  padding: 20px; 
 } 
-ul li{
+
+/* Main container alignment */
+main {
+  padding: 0;
+  margin: 0;
+  max-width: 1200px; /* Match container width */
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header alignment */
+header, footer{
+  max-width: 1200px; /* Match container width */
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul li {
   list-style: none;
 }
 
 img {
   width: 150px; 
-  height:150px; 
+  height: 150px; 
   object-fit: cover;
-  /* border: 3px solid var(--proj-img-border); */
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-} 
+}
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
+/* IMPROVED SECTION HEIGHTS - More balanced spacing */
+section {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Specific section height adjustments */
+#about {
+  min-height: 100vh; /* Keep full height for hero section */
+}
+
+#projects {
+  min-height: 90vh; /* Slightly taller for project showcase */
+}
+
+#experience {
+  min-height: 85vh; /* Adequate height for experience content */
+}
+
+#contact {
+  min-height: 60vh; /* Shorter for contact section */
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--txtColor);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-fluid, footer, main, header {
+    width: 95%; /* Slightly wider on mobile */
+  }
+  
+  section {
+    min-height: 70vh; /* Reduced height on mobile */
+    padding: 60px 0;
+  }
+  
+  #about {
+    min-height: 90vh;
+  }
+  
+  #projects {
+    min-height: 80vh;
+  }
+  
+  #experience {
+    min-height: 75vh;
+  }
+  
+  #contact {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-fluid, footer, main, header {
+    width: 98%; /* Almost full width on small screens */
+  }
+  
+  section {
+    min-height: 60vh;
+    padding: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}

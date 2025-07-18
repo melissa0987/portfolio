@@ -1,45 +1,130 @@
-/* header  */ 
-/* hamburger */
-header{
-  width: 90%;
-  /* border: 3px solid red; */
-}
-.navbar .navbar-toggler{ 
-  background-color: var(--navbg);    
-  padding: 10px 15px;
-}
-/* nav hamburger hover */
-.navbar .navbar-toggler:hover{ 
-  background-color:var(--navbgAC);    
-  box-shadow: 0 5px 10px rgba(0,0,0,5);
-  border-radius: 35px;  
+/* ========== Header & Navbar Styles ========== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--proj-border);
+  transition: all 0.3s ease;
+  border-radius: 35px;
 }
 
-/* nav bar options */      
-.navbar-nav li{
-  padding: 8px 5px;   
+/* Navbar container follows uniform system */
+.navbar {
+  padding: 0;
+  min-height: 60px;
+  
 }
-.navbar-nav a {   
-  /* border: 2px solid black; */
-  padding: 8px  15px;      
+
+/* Hamburger Button */
+.navbar .navbar-toggler {
+  background-color: var(--navbg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-toggler:hover {
+  background-color: var(--navbgAC);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  transform: scale(1.05);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar Links */
+.navbar-nav {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-nav li {
+  padding: 0;
+}
+
+.navbar-nav a {
+  padding: 10px 20px;
   color: var(--txtColor);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  white-space: nowrap;
 }
 
-/* dak-light mode button */
+/* Dark/Light Mode Toggle Button */
 #theme-toggle {
-  padding: 5px 15px ; 
+  padding: 10px 15px;
   color: var(--txtColor);
-  font-size: 25px;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  border-radius: 50%;
   transition: all 0.3s ease-in-out;
-} 
-.navbar-nav a:hover, #theme-toggle:hover  { 
-  background-color: var(--nav-txt-bg-hover);    
-  color: var(--nav-txt-hover);    
-  text-decoration: underline;
-  border-radius: 30px;
-  box-shadow: 0 5px 10px var( --box-shadow);    
-}  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-nav a:hover,
+#theme-toggle:hover {
+  background-color: var(--nav-txt-bg-hover);
+  color: var(--nav-txt-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--box-shadow);
+}
+
+/* Navbar collapse animation */
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 50px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+    gap: 0.25rem;
+  }
+  
+  .navbar-nav a {
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+  
+  #theme-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    min-height: 45px;
+  }
+  
+  .navbar-nav a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  #theme-toggle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

@@ -25,21 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
       themeIcon.classList.add("bi-moon"); //adds moon icon
       console.log("Switched to dark mode");
     }
-  });
-
-  // funtion for arrow to the top
-  const backToTopButton = document.getElementById("arrowTop");
-  window.onscroll = function () {
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      backToTopButton.classList.add("show");
-    } else {
-      backToTopButton.classList.remove("show");
-    }
-  };
-
+  }); 
+  
   //hover on the project logos
   const projContainers = document.getElementsByClassName("proj-cont"); 
   Array.from(projContainers).forEach((container, index) => {
@@ -123,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pDecID.textContent = "";
       }
       // <!--Course List Database -->
-      if (pDecID == container.querySelector("#courselist-db")) {
+      if (pDecID == container.querySelector("#courselist-desc")) {
         pDecID.textContent = "";
       }
       // <!--Movie Rental Database -->
@@ -135,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pDecID.textContent = "";
       }
       // Exchange Rate Calculator
-      if (pDecID == container.querySelector("#exchange-db")) {
+      if (pDecID == container.querySelector("#exchange-desc")) {
         pDecID.textContent = "";
       }
     });
@@ -152,15 +139,5 @@ document.addEventListener("DOMContentLoaded", function () {
     event.target.src = "images/portforlio.png";
     event.target.alt = "portfolio-ghibli"
   });
-
-    // for background image scroll
-    // window.addEventListener("scroll", () => {
-    //   const scrollY = window.scrollY;
-    //   const docHeight = document.body.scrollHeight - window.innerHeight;
-    //   const scrollPercent = scrollY / docHeight;
-      
-    //   // Set vertical background position based on scroll
-    //   document.body.style.backgroundPosition = `center ${scrollPercent * 100}%`; 
-    // });
 
 });

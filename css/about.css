@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-main {
-  padding: 0;
-  margin: 0;
-}
-
+/* About section uses uniform container system from body.css */
 #about {
+  padding: 15vh 0;
   border-radius: 10px;
-  padding: 2vh;
+  /* Height and container handled by body.css */
 }
 
 .about-container {
@@ -15,84 +12,107 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  width: 100%;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .image-text-container {
-  flex: 1 1 300px;
+  flex: 1 1 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
 }
 
 #port-photo {
-  width: 280px;
-  height: 280px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
-  border: 5px solid var(--photo-frame);
+  border: 6px solid var(--photo-frame);
   border-radius: 50px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-  transition: transform 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
 }
 
 #port-photo:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 blockquote {
   word-spacing: 3px;
-  /* border: 5px solid var(--photo-frame); */
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
 }
 
 .intro-small {
   font-family: "Lora", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--blockquote);
-  margin-bottom: 1rem;
-  /* color: var(--accent-purple); */
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--blockquote), var(--txtColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 blockquote p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: 'Poppins', sans-serif;
   color: var(--blockquote);
+  line-height: 1.8;
+  margin-bottom: 0;
 }
 
-/* Arrow to Top */
-#arrowTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: var(--arrow-up-bg);
-  color: var(--arrow-up-c);
-  padding: 12px 16px;
-  border-radius: 50%;
-  display: none;
-  z-index: 1000;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#arrowTop i {
-  font-size: 1.5rem;
-}
-
-#arrowTop:hover {
-  background-color: var(--arrow-up-c);
-  color: var(--arrow-up-bg);
-  transform: scale(1.1);
-  border: 3px solid var(--arrow-up-bg);
-}
-
-#arrowTop.show {
-  display: block;
-}
-
-/* Responsive - small screens */
+/* Responsive - tablets */
 @media (max-width: 768px) {
-  #about {
-    padding: 1vh;
+  .about-container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .image-text-container {
+    min-width: 280px;
+    flex: 1 1 auto;
+  }
+
+  #port-photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .intro-small {  
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  blockquote {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  blockquote p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive - mobile */
+@media (max-width: 480px) {
+  .about-container {
+    gap: 1.5rem;
+  }
+
+  .image-text-container {
+    min-width: 250px;
   }
 
   #port-photo {
@@ -100,12 +120,15 @@ blockquote p {
     height: 250px;
   }
 
-  .intro-small {  
-    text-align: center;
-    font-size: 1.8rem;
+  .intro-small {
+    font-size: 2rem;
   }
 
   blockquote {
-    text-align: left;
+    padding: 1.5rem;
+  }
+
+  blockquote p {
+    font-size: 1.1rem;
   }
 }

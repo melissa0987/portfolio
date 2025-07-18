@@ -1,23 +1,40 @@
 /* Light Mode */
 :root {
-  /* gen  */
+  /* General */
   --bg-image: linear-gradient(43deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
   --bg-fb: #E0C3FC;  
-  --txtColor:  #04738C; 
-  --box-shadow:  rgba(0,0,0,0.5);
+  --txtColor: #04738C; 
+  --box-shadow: rgba(0,0,0,0.5);
 
-  /* header & navbar */
+  /* Header & navbar */
   --navbg: #eadabc;   
   --navbgAC: #F2E7C4;   
   --nav-txt-hover: #730c02;
   --nav-txt-bg-hover: #F2E7C4;
 
-  /* about */
-  --photo-frame:  rgb(55, 28, 134);
+  /* About section */
+  --photo-frame: rgb(114, 89, 188);
   --blockquote: #2C2C2C; 
+  --arrow-up-bg: #04738C;
+  --arrow-up-c: #fff;
 
-  
+  /* Projects section */
+  --proj-bg: rgba(255, 255, 255, 0.1);
+  --proj-border: rgba(114, 89, 188, 0.3);
+  --proj-img-border: #04738C;
+  --proj-hover-bg: rgba(255, 255, 255, 0.2);
 
+  /* Experience section */
+  --exp-bg: rgba(255, 255, 255, 0.1);
+  --exp-border: rgba(114, 89, 188, 0.3);
+  --exp-icon-color: #04738C;
+  --exp-date-bg: #F2E7C4;
+  --exp-date-color: #730c02;
+
+  /* Contact section */
+  --contact-bg: rgba(255, 255, 255, 0.1);
+  --social-hover: #04738C;
+  --social-color: #04738C;
 }
 
 /* Dark Mode */
@@ -25,59 +42,35 @@
   --bg-image: linear-gradient(43deg, #010626 0%, #131c58 18%, #3e4c91 47%, #1b3081 73%, #021373 82%, #020f59 95%);
   --bg-fb: #010626;  
   --txtColor: #FFC1CC;  
-  --box-shadow:  rgba(149, 178, 247, 0.975);
+  --box-shadow: rgba(149, 178, 247, 0.975);
 
-   /* header & navbar */
+  /* Header & navbar */
   --navbg: #FFC1CC;  
   --navbgAC: #9CC7E6;   
   --nav-txt-hover: #151b48;
   --nav-txt-bg-hover: #8491D9;
 
-  /* about */
+  /* About section */
   --photo-frame: #B39CD0;
   --blockquote: #A8DADC;
+  --arrow-up-bg: #FFC1CC;
+  --arrow-up-c: #151b48;
+
+  /* Projects section */
+  --proj-bg: rgba(255, 193, 204, 0.1);
+  --proj-border: rgba(179, 156, 208, 0.3);
+  --proj-img-border: #FFC1CC;
+  --proj-hover-bg: rgba(255, 193, 204, 0.2);
+
+  /* Experience section */
+  --exp-bg: rgba(255, 193, 204, 0.1);
+  --exp-border: rgba(179, 156, 208, 0.3);
+  --exp-icon-color: #FFC1CC;
+  --exp-date-bg: #8491D9;
+  --exp-date-color: #151b48;
+
+  /* Contact section */
+  --contact-bg: rgba(255, 193, 204, 0.1);
+  --social-hover: #FFC1CC;
+  --social-color: #A8DADC;
 }
-
-/* 
-for light mode:
-#8A3BD9, #AC79F2, #3A175B, #62679F, #57568C
-
-background-color: #E0C3FC;
-background-image: linear-gradient(298deg, #E0C3FC 0%, #98c9fc 33%, #c4b0dd 66%, #a2e0f2 100%);
-
-background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-
-background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 21%, #97d9e1 50%, #e3c3e3 67%, #8ec5fc 85%, #d9afd9 100%);
-background-color: #00DBDE;
-background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-
-
-#0f0c29
-→ 
-#302b63
-→ 
-#24243e
-
-
-
-for dark mode:
-#021373, #020F59, #010B40, #010626, #8491D9 
-background-color: #0f0c29;
-background-image: linear-gradient(62deg, #0f0c29 0%, #494f76 48%, #24243e 100%);
-
-background-color: #010626;
-background-image: linear-gradient(43deg, #010626 0%, #131c58 18%, #3e4c91 47%, #1b3081 73%, #021373 82%, #020f59 95%);
-
-
-
-/* Resetting default body margins and padding */ 
-
-/* body {
-  font-family: 'Cinzel', serif;
-  overflow-x: hidden; /* Prevent horizontal overflow */  
-  /* background-color:  #AC79F2;
-}  
-
-*/

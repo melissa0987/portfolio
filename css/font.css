@@ -1,0 +1,66 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Font Definitions */
+:root {
+  --font-primary: 'Lora', serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-accent: 'Cinzel', serif;
+  --font-fun: 'Sour Gummy', cursive;
+}
+
+/* Global Font Application */
+body {
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-primary);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-secondary);
+}
+
+p, li, span {
+  font-family: var(--font-secondary);
+}
+
+/* Special Font Classes */
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-fun {
+  font-family: var(--font-fun);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+/* Font Weight Utilities */
+.fw-light { font-weight: 300; }
+.fw-regular { font-weight: 400; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+.fw-black { font-weight: 900; }
+
+/* Font Size Utilities */
+.fs-xs { font-size: 0.75rem; }
+.fs-sm { font-size: 0.875rem; }
+.fs-base { font-size: 1rem; }
+.fs-lg { font-size: 1.125rem; }
+.fs-xl { font-size: 1.25rem; }
+.fs-2xl { font-size: 1.5rem; }
+.fs-3xl { font-size: 1.875rem; }
+.fs-4xl { font-size: 2.25rem; }
+.fs-5xl { font-size: 3rem; }
