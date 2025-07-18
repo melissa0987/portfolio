@@ -6,12 +6,15 @@
   align-items: center;
 }
 
-#experience h2 {
-  font-size: 2.5rem;
+#experience h2 { 
   color: var(--txtColor);
+  margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: center;
   font-weight: 700;
+  font-size: 3.5rem;
+  font-family: var(--font-cinzel);  
+  text-decoration: underline; 
 }
 
 .exp-container {
@@ -44,6 +47,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-family: var(--font-sourgummy); /* Sour Gummy */
 }
 
 .experience-entry h3 i {
@@ -60,11 +64,13 @@
 
 .yearWork {
   display: flex;
+  flex-direction: row;
   justify-content: left;
   align-items: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
   gap: 1rem;
+  font-family: var(--font-poppins); /* Sour Gummy */
 }
 
 .date-label {
@@ -90,6 +96,7 @@
   color: var(--blockquote);
   font-size: 1.1rem;
   line-height: 1.6;
+  font-family: var(--font-poppins); /* Sour Gummy */
 }
 
 .experience-details li:before {
@@ -143,6 +150,9 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  #experience h2 { 
+    font-size: 2.8rem;
+  }
   .experience-entry {
     padding: 2rem;
   }
@@ -155,7 +165,7 @@
   }
   
   .yearWork {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
   }

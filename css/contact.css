@@ -25,6 +25,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-sourgummy); /* Sour Gummy */
+  font-weight: 600;
 }
 
 .social-links {
@@ -123,6 +125,8 @@
   font-size: 0.9rem;
   margin: 0;
   opacity: 0.8;
+  font-family: var(--font-poppins); 
+  font-weight: 400;
 }
 
 /* Responsive - tablets */
@@ -143,6 +147,7 @@
     width: 50px;
     height: 50px;
     font-size: 1.3rem;
+    font-family: var(--font-poppins);
   }
 }
 

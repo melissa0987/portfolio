@@ -12,15 +12,8 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/experience.css" />
-    <link rel="stylesheet" href="css/contact.css" /> 
-    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/contact.css" />   
 
-    <!-- Google Font -->
-    <link rel="stylesheet" href="css/font.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap & Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -28,13 +21,18 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
-    />
+    /> 
+
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 
     <!-- Bootstrap JS & Custom Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -46,34 +44,21 @@
     <header class="container-fluid px-0">
       <section id="home">
         <nav class="navbar navbar-expand-sm navbar-light container-fluid d-flex justify-content-between align-items-center px-3">
-          
-          <!-- Hamburger stays LEFT -->
-          <button
-            class="navbar-toggler order-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
     
           <!-- Nav Links -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center text-center text-lg-start">
                <!-- nav bar menu -->
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <!-- toogle for dar/light mode -->
+              <li><a href="#about"><i class="bi bi-person-fill"></i> About</a></li>
+              <li><a href="#projects"><i class="bi bi-folder-fill"></i> Projects</a></li>
+              <li><a href="#experience"><i class="bi bi-briefcase-fill"></i> Experience</a></li>
+              <li><a href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+                <!-- toggle for dark/light mode -->
                 <button id="theme-toggle" class="btn">
                   <i id="theme-icon" class="bi bi-sun"></i>
                 </button>
               </li>
+            </ul>
           </div>
         </nav>
       </section>
@@ -81,7 +66,7 @@
     
     <!-- Main Content -->
     <main class="container-fluid d-flex flex-column justify-content-center">
-      <!-- WLCOME/home content-->
+      <!-- WELCOME/home content-->
       <section id="about">
         <div class="about-container container-fluid d-flex flex-wrap justify-content-center align-items-center">
           
@@ -97,7 +82,7 @@
               <p>
                 — a curious coder, tech tinkerer, and full-time Software Dev student at Vanier College. 
                 With hands-on experience in IT support and systems upgrades. From squashing bugs to spinning up web apps, 
-                I’m all about learning, building, and having fun while doing it.
+                I'm all about learning, building, and having fun while doing it.
               </p>
             </blockquote>
           </div>
@@ -119,33 +104,32 @@
               />
             </div>
             <div class="desc-cont">
-              <h5>Course Manager Web App</h5>
+              <h5>Competency Manager Web App</h5>
               <p id="comp-desc"></p>
             </div>
           </div>
 
           <!-- Projects 2 -->
-          <!-- CRecord Store Appp -->
+          <!-- Record Store Appp -->
           <div class="proj-cont">
             <div class="img-cont">
               <img src="images/record-store-app.png" alt="record-store-app" />
             </div>
             <div class="desc-cont">
-              <h5>Record Store App</h5>
+              <h5>Record Store Management System</h5>
               <p id="record-desc"></p>
             </div>
           </div>
 
           <!-- Projects 3 -->
-          <!-- Tindog Website -->
+          <!-- dqueez Website -->
           <div class="proj-cont">
             <div class="img-cont">
-              <img src="images/tindog-logo.png" alt="tindog-logo" />
+              <img src="images/dqueez.png" alt="dqueez-logo" />
             </div>
             <div class="desc-cont">
-              <h5>Tindog Website</h5>
-              <p id="tindog-desc"></p>
-              <!-- https://ghalipm-vanier-college.github.io/front-end-web-programming-winter-2025-melissa0987/tindog/index.html -->
+              <h5>Deez Queez - Quiz Website</h5>
+              <p id="dqueez-desc"></p>
             </div>
           </div>
 
@@ -162,7 +146,7 @@
           </div>
 
           <!-- Projects 5 -->
-          <!--Movie Rental Database -->
+          <!--MusicRecordLibraryWebRESTProject -->
           <div class="proj-cont">
             <div class="img-cont">
               <img src="images/movie-rental-logo.png" alt="movie-rental-logo" />
@@ -219,13 +203,13 @@
             </div>
             <ul class="experience-details">
               <li>
-                Upgraded key servers and virtual hosts, improving system performance and reducing downtime for hundreds of users.
+                Conducted post-upgrade assessments on critical infrastructure, including network security measures, IP cameras, and firewalls, leading to a 15% improvement in network reliability.
               </li>
               <li>
-                Collaborated with teams to ensure smooth deployments, helping identify and resolve issues.
+                Collaborated with cross-functional teams to enhance system performance and data security, ensuring smooth operational continuity and minimizing disruptions.
               </li>
               <li>
-                Performed post-upgrade checks on networks and security systems, contributing to a more reliable and secure IT environment.
+                Maintained and troubleshot enterprise-level network systems, gaining valuable experience in IT infrastructure management.
               </li>
             </ul>
           </div>
@@ -246,10 +230,10 @@
 
             <ul class="experience-details">
               <li>
-                Supported daily operations by organizing tasks and improving internal workflows.
+                Audited and validated 100% of incoming funding documentation within designated SLA timeframes, reducing processing delays by 15% and ensuring timely fund disbursement.
               </li>
               <li>
-                Handled lease transfers and financial processes with precision, ensuring smooth transitions and maintaining zero errors in high-value transactions.
+                Implemented a rigorous verification system for signatures and contract details, successfully identifying discrepancies in 8% of cases and facilitating immediate resolution to uphold contractual integrity and expedite funding approval.
               </li>
               <li>
                 Worked with different teams to improve training and workflows, boosting customer satisfaction and keeping lease operations running efficiently.
@@ -321,7 +305,7 @@
 
             <!-- Email -->
             <li>
-              <a href="mailto:melissabangloy023@gmail.com" a ria-label="Email">
+              <a href="mailto:melissabangloy023@gmail.com" aria-label="Email">
                 <i class="fas fa-envelope"></i>
               </a>
             </li>
@@ -334,7 +318,6 @@
           <h6>&copy;<span id="currentYR"></span> All rights reserved.</h6>
         </div>
       </section>
-
 
     </footer>
   </body>

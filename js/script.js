@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Course Manager Web App
-      if (pDecID == container.querySelector("#tindog-desc")) {
-        pText = "A responsive web app built with HTML5," + 
-          " CSS, and Bootstrap that helps dog owners " +
-          " connect their pets with nearby companions in a " +
-          " fun, user-friendly interface."
+      if (pDecID == container.querySelector("#dqueez-desc")) {
+        pText = "web-based quiz platform designed to streamline the process of creating," + 
+                " distributing, and managing quizzes in educational environments. " +
+                "Teachers can create custom quizzes with multiple question types, " +
+                "manage student access through unique URLs, and track responses in real-time.";
       }
 
       // Course list db
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pDecID.textContent = "";
       }
       // <!-- Tindog Website -->
-      if (pDecID == container.querySelector("#tindog-desc")) {
+      if (pDecID == container.querySelector("#dqueez-desc")) {
         pDecID.textContent = "";
       }
       // <!--Course List Database -->
