@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: var(--font-sourgummy);
+  font-family: var(--font-lora);
 }
 
 .education-card h3 i {
@@ -77,8 +77,7 @@
 
 .location-label {
   background: var(--exp-date-bg);
-  color: var(--exp-date-color);
-  padding: 0.5rem 1rem;
+  color: var(--exp-date-color); 
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.9rem;
@@ -124,8 +123,7 @@
 
 .coursework li {
   position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
+  padding-left: 2rem; 
   color: var(--blockquote);
   font-size: 1.1rem;
   line-height: 1.6;

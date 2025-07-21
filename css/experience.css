@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: var(--font-sourgummy); /* Sour Gummy */
+  font-family: var(--font-lora); /* Sour Gummy */
 }
 
 .experience-entry h3 i {

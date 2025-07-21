@@ -52,7 +52,7 @@ blockquote {
 
 .intro-small {
   font-family: var(--font-sourgummy); /* Sour Gummy */
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--blockquote);
   margin-bottom: 1.5rem;
   font-weight: 700;
