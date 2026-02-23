@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rina Lou | Enchanted Developer</title>
+    <title>Melissa's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -10,30 +10,56 @@
 </head>
 
 <body>
+  <canvas id="particles"></canvas>
 
-    <header class="hero">
-      <canvas id="particles"></canvas>
+  <header class="hero">
 
-      <nav>
-        <div>
-          <ul>
-            <li><a href="#about"><i class="bi bi-person-fill"></i> About</a></li>
-              <li><a href="#education"><i class="bi bi-mortarboard-fill"></i> Education</a></li>
-              <li><a href="#projects"><i class="bi bi-folder-fill"></i> Projects</a></li>
-              <li><a href="#experience"><i class="bi bi-briefcase-fill"></i> Experience</a></li>
-              <li><a href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
-                <!-- toggle for dark/light mode -->
-              <li>
-                <button id="theme-toggle" class="btn">
-                  <i id="theme-icon" class="bi bi-sun"></i>
-                </button>
-              </li>
-          </ul>
-        </div>
-      </nav>
-        
-        
-    </header>
+    <nav >
+      <ul >
+        <li><a href="#about"><i class="bi bi-person-fill"></i> About</a></li>
+        <li><a href="#education"><i class="bi bi-mortarboard-fill"></i> Education</a></li>
+        <li><a href="#projects"><i class="bi bi-folder-fill"></i> Projects</a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase-fill"></i> Experience</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i id="theme-icon" class="bi bi-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="image-container">
+        <img id="port-photo" src="images/portforlio.png" alt="portfolio-ghibli" />
+
+      </div>
+      
+      <div class="image-text-container">
+        <blockquote class="text-md-start">
+          <h2 class="intro-small">
+            👋 Hi, I'm Melissa
+          </h2>
+          <p class="intro">
+            I am a 
+            <span id="typed-word">Software</span>
+            Developer.
+            <br>
+            I build full-stack applications using technologies such as C#, Java, React, and PostgreSQL.
+            <br>
+            I focus on writing clean, scalable code and continuously improving through real-world project development.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 
 
 </body>
