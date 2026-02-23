@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('/images/fantasy-bg.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0));
+}
+#particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+} 
+nav {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    color: #f8fafc;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
