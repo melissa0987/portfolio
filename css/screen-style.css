@@ -1,0 +1,114 @@
+/* mobile */ 
+@media (max-width: 768px) {
+
+    main {
+        padding: 3rem 1.5rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* sectiion */
+    #about,
+    #education {
+        flex-direction: column;
+        min-height: auto;
+        width: 95%;
+        padding: 2rem 0;
+        border: none;
+        align-items: center;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 2rem;
+        border: none;
+    }
+
+    .photo-frame {
+        width: 260px;
+        height: 250px;
+    }
+
+    /* Typography adjustments */
+    .intro-small {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    #typed-word {
+        font-size: 1.8rem;
+    }
+
+    .typed-wrapper {
+        width: 8ch;
+    }
+
+    /* Education */
+    #education h2 {
+        font-size: 1.8rem;
+    }
+
+    .education-card {
+        padding: 1.8rem;
+    }
+
+    .education-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* tablet */ 
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    main {
+        padding: 4rem 2rem;
+    }
+
+    #about,
+    #education {
+        width: 92%;
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .image-container {
+        gap: 2rem;
+    }
+
+    .photo-frame {
+        width: 300px;
+    }
+
+    .intro-small {
+        font-size: 2.2rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    #typed-word {
+        font-size: 2.2rem;
+    }
+
+    .education-card {
+        padding: 2rem;
+    }
+}

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Melissa's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/screen-style.css">
     <script defer src="js/script.js"></script>
-</head>
+  </head>
 
-<body>
-  <canvas id="particles"></canvas>
+  <body>
+    <canvas id="particles"></canvas>
 
-  <header class="hero">
+    <header class="hero">
 
     <nav >
       <ul >
@@ -29,38 +30,278 @@
       </ul>
     </nav>
 
-  </header>
+    </header>
 
-  <main>
-    <section id="about">
-      <div class="image-container">
-        <img id="port-photo" src="images/portforlio.png" alt="portfolio-ghibli" />
+    <main>
+    <!-- about -->
+      <section id="about">
+        <div class="image-container">
+          <div class="photo-frame">
+            <img id="port-photo" src="images/portforlio.png" alt="portfolio-ghibli" />
+          </div>
 
-      </div>
-      
-      <div class="image-text-container">
-        <blockquote class="text-md-start">
-          <h2 class="intro-small">
+          <blockquote>
+            <h2 class="intro-small">
             👋 Hi, I'm Melissa
-          </h2>
-          <p class="intro">
-            I am a 
-            <span id="typed-word">Software</span>
-            Developer.
-            <br>
-            I build full-stack applications using technologies such as C#, Java, React, and PostgreSQL.
-            <br>
-            I focus on writing clean, scalable code and continuously improving through real-world project development.
+            </h2>
+            <p class="intro">
+              I am a 
+              <span class="typed-wrapper">
+                <span id="typed-word">Software</span>
+              </span>
+              Developer.
+              <br>
+            </p>
+            <p>
+              I build full-stack applications using technologies such as Java, Python, C#, React, and PostgreSQL.
+              <br>I focus on writing clean, scalable code and continuously improving through real-world project development.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- education -->
+      <section id="education">
+        <h2><i class="bi bi-mortarboard-fill"></i> Education</h2>
+        <div class="education-card">
+          <h3>Vanier College</h3>
+          <p class="location">Montreal, QC</p>
+          <p class="program">
+            AEC Software Development: Secure Desktop, Mobile & Web Applications
           </p>
-        </blockquote>
-      </div>
-    </section>
-  </main>
+          <p class="completion"> November 2025</p>
+          <ul class="coursework">
+            <li>Programming Fundamentals</li>
+            <li>Database Management Systems</li>
+            <li>Algorithms and Data Structures</li>
+            <li>Object-Oriented Paradigm</li>
+            <li>Financial Data Analysis</li>
+            <li>Business Intelligence</li>
+          </ul>
+        </div>
+      </section>
 
-  <footer>
+      <!-- projects Content -->
+      <section id="projects">
+        <h2><i class="bi bi-folder-fill"></i>Projects</h2>
+        <div class="project-container">
+          <!-- Projects 1 -->
+          <!-- Course Manager Web App -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img
+                src="images/competency-app-logo.png"
+                alt="competency-app-logo"
+              />
+            </div>
+            <div class="desc-cont">
+              <h5>Competency Manager Web App</h5>
+              <p id="comp-desc"></p>
+            </div>
+          </div>
 
-  </footer>
+          <!-- Projects 2 -->
+          <!-- Record Store Appp -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img src="images/record-store-app.png" alt="record-store-app" />
+            </div>
+            <div class="desc-cont">
+              <h5>Record Store Management System</h5>
+              <p id="record-desc"></p>
+            </div>
+          </div>
+
+          <!-- Projects 3 -->
+          <!-- dqueez Website -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img src="images/dqueez.png" alt="dqueez-logo" />
+            </div>
+            <div class="desc-cont">
+              <h5>Deez Queez - Quiz Website</h5>
+              <p id="dqueez-desc"></p>
+            </div>
+          </div>
+
+          <!-- Projects 4 -->
+          <!--Course List Database -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img src="images/courselist-db.png" alt="courselist-db" />
+            </div>
+            <div class="desc-cont">
+              <h5>Course List Database</h5>
+              <p id="courselist-desc"></p>
+            </div>
+          </div>
+
+          <!-- Projects 5 -->
+          <!--MusicRecordLibraryWebRESTProject -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img src="images/musicLibrary.png" alt="musicLibrary" />
+            </div>
+            <div class="desc-cont">
+              <h5>Music Record Library Web REST Project</h5>
+              <p id="musicLibrary-desc"></p>
+            </div>
+          </div> 
+
+          <!-- Work 7 -->
+          <div class="proj-cont">
+            <div class="img-cont">
+              <img
+                src="images/exchange-rate-logo.png"
+                alt="exchange-rate-logo"
+              />
+            </div>
+            <div class="desc-cont">
+              <h5>Exchange Rate Calculator</h5>
+              <p id="exchange-desc"></p>
+            </div> 
+          </div>
+
+        </div>
+      </section>
+
+      <!-- work experience Content -->
+      <section id="experience">
+        <h2><i class="bi bi-briefcase-fill"></i>Work Experience</h2>
+        <div class="exp-container">
+          <!-- Work 1 -->
+          <!-- IT Support Specialist -->
+          <div class="experience-entry">
+          <h3>
+          <i class="fa fa-briefcase"></i>
+          Fujitsu Network Communications <br />
+          IT Support Specialist
+          </h3>
+          <hr />
+          <div class="yearWork">
+          <span class="date-label">July 2023</span>
+          <span class="date-label">December 2024</span>
+          </div>
+          <ul class="experience-details">
+          <li>
+          Conducted post-upgrade assessments on critical infrastructure, including network security measures, IP cameras, and firewalls, leading to a 15% improvement in network reliability.
+          </li>
+          <li>
+          Collaborated with cross-functional teams to enhance system performance and data security, ensuring smooth operational continuity and minimizing disruptions.
+          </li>
+          <li>
+          Maintained and troubleshot enterprise-level network systems, gaining valuable experience in IT infrastructure management.
+          </li>
+          </ul>
+          </div>
+
+          <!-- Work 2 -->
+          <!-- Operations Support Representative -->
+          <div class="experience-entry">
+          <h3>
+          <i class="fa fa-briefcase"></i>
+          Volkswagen <br />
+          Operations Support Representative
+          </h3>
+          <hr />
+          <div class="yearWork">
+          <span class="date-label">August 2023</span>
+          <span class="date-label">January 2024</span>
+          </div>
+
+          <ul class="experience-details">
+          <li>
+          Audited and validated 100% of incoming funding documentation within designated SLA timeframes, reducing processing delays by 15% and ensuring timely fund disbursement.
+          </li>
+          <li>
+          Implemented a rigorous verification system for signatures and contract details, successfully identifying discrepancies in 8% of cases and facilitating immediate resolution to uphold contractual integrity and expedite funding approval.
+          </li>
+          <li>
+          Worked with different teams to improve training and workflows, boosting customer satisfaction and keeping lease operations running efficiently.
+          </li>
+          </ul>
+          </div>
+
+          <!-- cv -->
+          <div class="experience-entry">
+            <div class="text-center">
+              <h3>Want to Know More? Grab My CV!</h3>
+              <!-- bootstrap logo -->
+              <a
+                href="assets/MelissaLouiseBangloy.pdf"
+                download
+                class="btn btn-primary"
+              >
+                <!-- download cv -->
+                <i class="bi bi-download"></i> Download CV
+              </a>
+            </div>
+          </div>
 
 
-</body>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer --> 
+    <footer class="container-fluid d-flex flex-column justify-content-center"> 
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact-container">
+          <div id="socials">
+            <h3>Click, connect, Let's collaborate?</h3>
+          </div>
+
+          <ul class="social-links">
+            <!-- LinkedIn -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/melissa-bangloy023/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+              <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+
+          <!-- GitHub -->
+          <li>
+            <a
+              href="https://github.com/melissa0987"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <!-- GitLab -->
+          <li>
+            <a
+              href="https://gitlab.com/melissa_louise"
+              target="_blank"
+              aria-label="GitLab"
+            >
+              <i class="bi bi-gitlab"></i>
+            </a>
+          </li>
+
+          <!-- Email -->
+          <li>
+            <a href="mailto:melissabangloy023@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+
+          </ul>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container text-center py-2">
+          <h6>&copy;<span id="currentYR"></span> All rights reserved.</h6>
+        </div>
+      </section>
+
+    </footer> 
+  </body>
 </html>

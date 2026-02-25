@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const wordColors = {
     Software: "#ffa640",
-    Frontend: "#645af0",
+    Frontend: "#a9a5e0",
     FullStack: "#3c7723",
     Web: "#f86d4a",
     React: "#308ea8",
@@ -136,5 +136,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     typeEffect();
+
+    // change photo when hover
+    const portphoto = document.getElementById("port-photo");
+    portphoto.addEventListener("mouseenter", (event) =>{
+        event.target.src = "images/port-photo.png";
+        event.target.alt = "portfolio-person"
+    });
+    portphoto.addEventListener("mouseleave", (event) =>{
+        event.target.src = "images/portforlio.png";
+        event.target.alt = "portfolio-ghibli"
+    });
 
 })
