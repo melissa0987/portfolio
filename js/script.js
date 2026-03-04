@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
   themeBtn.addEventListener("click", () => {
     const isNowLight = document.body.classList.toggle("light");
     themeIcon.className = isNowLight ?   "bi bi-sun" : "bi bi-moon";
-    localStorage.setItem("theme", isNowLight ? "light" : "dark");
+    localStorage.setItem("theme", isNowLight ? "dark" : "light");
   });
 
 
