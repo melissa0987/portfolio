@@ -120,7 +120,39 @@
 
       <div class="projects-grid">
 
-        <!-- 01 PrintCraft — featured -->
+
+        <!-- 01 WhiskerWatch -->
+        <article class="proj-card reveal" style="transition-delay:.1s"> 
+          <h3 class="proj-title">WhiskerWatch</h3>
+          <p class="proj-desc">
+            Decoupled full-stack pet-sitting platform built with a Spring Boot REST API 
+            backend and a separate React frontend, reflecting real-world service architecture 
+            separation. The system provides RESTful endpoints for authentication, user and 
+            sitter profiles, and booking management. The project demonstrates secure session 
+            handling concepts (including JWT-style patterns), service-layer backend design, 
+            and component-based frontend development.
+          </p>
+          <ul class="proj-tags">
+            <li class="tag">Java</li>
+            <li class="tag">Spring Boot</li>
+            <li class="tag">PostgreSQL</li>
+            <li class="tag">React</li>
+          </ul>
+          <div class="proj-links">
+            <a href="https://github.com/melissa0987/whiskerwatch" target="_blank" rel="noopener" class="proj-link">
+              <i class="bi bi-github" aria-hidden="true"></i> Backend
+            </a>
+            <a href="https://github.com/melissa0987/whiskerwatch-react-app" target="_blank" rel="noopener" class="proj-link">
+              <i class="bi bi-github" aria-hidden="true"></i> Frontend
+            </a>
+          </div>
+          <div class="proj-img" aria-hidden="true">
+            <img src="images/whiskerwatch.png" alt="WhiskerWatch screenshot"
+                 onerror="this.parentElement.innerHTML='<span class=proj-img-placeholder>🖨️</span>'" />
+          </div>
+        </article>
+
+        <!-- 02 PrintCraft — featured -->
         <article class="proj-card featured reveal" style="transition-delay:.05s">
           <div class="proj-body"> 
             <h3 class="proj-title">PrintCraft</h3>
@@ -135,11 +167,9 @@
             </p>
             <ul class="proj-tags">
               <li class="tag">Python</li>
-              <li class="tag">Flask</li> 
               <li class="tag">PostgreSQL</li>
-              <li class="tag">Jinja</li>
+              <li class="tag">Flask</li> 
               <li class="tag">JavaScript</li>
-              <li class="tag">CSRF</li>
             </ul>
             <div class="proj-links">
               <a href="https://github.com/melissa0987/custom-print-shop" target="_blank" rel="noopener" class="proj-link">
@@ -157,39 +187,38 @@
           </div>
         </article>
 
-        <!-- 02 WhiskerWatch -->
-        <article class="proj-card reveal" style="transition-delay:.1s"> 
-          <h3 class="proj-title">WhiskerWatch</h3>
+        <!-- 03 Deez Queez -->
+        <article class="proj-card reveal" style="transition-delay:.2s"> 
+          <h3 class="proj-title">Deez Queez</h3>
           <p class="proj-desc">
-            Decoupled full-stack pet-sitting platform built with a Spring Boot REST API 
-            backend and a separate React frontend, reflecting real-world service architecture 
-            separation. The system provides RESTful endpoints for authentication, user and 
-            sitter profiles, and booking management. The project demonstrates secure session 
-            handling concepts (including JWT-style patterns), service-layer backend design, 
-            and component-based frontend development.
+            Dqueez is a group web development project built by a team of 5 using HTML, 
+            CSS, and JavaScript. The platform supports interactive quiz workflows, 
+            including quiz creation, question rendering, and response handling through 
+            client-side event-driven scripting. The project demonstrates DOM manipulation 
+            and dynamic content rendering for lightweight educational quiz delivery.
           </p>
           <ul class="proj-tags">
-            <li class="tag">Java</li>
-            <li class="tag">Spring Boot</li>
-            <li class="tag">React</li>
-            <li class="tag">REST API</li>
-            <li class="tag">PostgreSQL</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">Node.js</li> 
+            <li class="tag">PostgreSQL</li> 
           </ul>
           <div class="proj-links">
-            <a href="https://github.com/melissa0987/whiskerwatch" target="_blank" rel="noopener" class="proj-link">
-              <i class="bi bi-github" aria-hidden="true"></i> Backend
+            <a href="https://github.com/alexkh/dqueez" target="_blank" rel="noopener" class="proj-link">
+              <i class="bi bi-github" aria-hidden="true"></i> GitHub
             </a>
-            <a href="https://github.com/melissa0987/whiskerwatch-react-app" target="_blank" rel="noopener" class="proj-link">
-              <i class="bi bi-github" aria-hidden="true"></i> Frontend
+            <a href="https://dqueez.com" target="_blank" rel="noopener" class="proj-link">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live
             </a>
           </div>
           <div class="proj-img" aria-hidden="true">
-            <img src="images/whiskerwatch.png" alt="WhiskerWatch screenshot"
+            <img src="images/dqueez.png" alt="Deez Queez screenshot"
                  onerror="this.parentElement.innerHTML='<span class=proj-img-placeholder>🖨️</span>'" />
           </div>
         </article>
 
-        <!-- 03 Fridge Pantry -->
+        <!-- 04 Fridge Pantry -->
         <article class="proj-card reveal" style="transition-delay:.15s"> 
           <h3 class="proj-title">Fridge Pantry</h3>
           <p class="proj-desc">
@@ -210,34 +239,6 @@
           </div>
           <div class="proj-img small" aria-hidden="true">
             <img src="images/fridgePantry.png" alt="Fridge Pantry screenshot"
-                 onerror="this.parentElement.innerHTML='<span class=proj-img-placeholder>🖨️</span>'" />
-          </div>
-        </article>
-
-        <!-- 04 Deez Queez -->
-        <article class="proj-card reveal" style="transition-delay:.2s"> 
-          <h3 class="proj-title">Deez Queez</h3>
-          <p class="proj-desc">
-            Dqueez is a group web development project built by a team of 5 using HTML, 
-            CSS, and JavaScript. The platform supports interactive quiz workflows, 
-            including quiz creation, question rendering, and response handling through 
-            client-side event-driven scripting. The project demonstrates DOM manipulation 
-            and dynamic content rendering for lightweight educational quiz delivery.
-          </p>
-          <ul class="proj-tags">
-            <li class="tag">Node.js</li><li class="tag">Express</li>
-            <li class="tag">PostgreSQL</li><li class="tag">JavaScript</li>
-          </ul>
-          <div class="proj-links">
-            <a href="https://github.com/alexkh/dqueez" target="_blank" rel="noopener" class="proj-link">
-              <i class="bi bi-github" aria-hidden="true"></i> GitHub
-            </a>
-            <a href="https://dqueez.com" target="_blank" rel="noopener" class="proj-link">
-              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live
-            </a>
-          </div>
-          <div class="proj-img" aria-hidden="true">
-            <img src="images/dqueez.png" alt="Deez Queez screenshot"
                  onerror="this.parentElement.innerHTML='<span class=proj-img-placeholder>🖨️</span>'" />
           </div>
         </article>
@@ -317,9 +318,9 @@
         <p class="contact-info-label">Find me on</p>
         <ul class="social-links" aria-label="Social links">
           <li><a href="https://www.linkedin.com/in/melissa-bangloy023/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="https://github.com/melissa0987"                   target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://gitlab.com/melissa_louise"                target="_blank" rel="noopener" aria-label="GitLab"><i class="bi bi-gitlab"></i></a></li>
-          <li><a href="mailto:melissabangloy023@gmail.com"               aria-label="Email"><i class="bi bi-envelope-fill"></i></a></li>
+          <li><a href="https://github.com/melissa0987" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://gitlab.com/melissa_louise" target="_blank" rel="noopener" aria-label="GitLab"><i class="bi bi-gitlab"></i></a></li>
+          <li><a href="mailto:melissabangloy023@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a></li>
         </ul>
       </div>
 
